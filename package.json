@@ -1,0 +1,22 @@
+{
+  "name": "monad-testchain",
+  "version": "1.0.0",
+  "description": "> [!NOTE] > In this Foundry template, the default chain is `monadTestnet`. If you wish to change it, change the network in `foundry.toml`",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "monitor": "node src/monitor.js",
+    "script/monitor_reorg": "node src/monitor_reorg.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "viem": "^2.43.2"
+  }
+}
