@@ -10,13 +10,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "monitor": "node src/monitor.js",
-    "script/monitor_reorg": "node src/monitor_reorg.js"
+    "script/monitor_reorg": "node src/monitor_reorg.js",
+    "monitor:monad": "node src/monitor_reorg_monad.js",
+    "monitor:monad:start": "pm2 start src/monitor_reorg_monad.js --name monad-monitor",
+    "monitor:monad:stop": "pm2 stop monad-monitor",
+    "monitor:monad:logs": "pm2 logs monad-monitor",
+    "monitor:base": "node src/monitor_reorg_base.js",
+    "monitor:base:start": "pm2 start src/monitor_reorg_base.js --name base-monitor",
+    "monitor:base:stop": "pm2 stop base-monitor",
+    "monitor:base:logs": "pm2 logs base-monitor",
+    "test:monitor_reorg": "node --test test/monitor_reorg.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "viem": "^2.43.2"
+  },
+  "devDependencies": {
+    "pm2": "^6.0.14"
   }
 }

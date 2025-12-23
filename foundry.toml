@@ -2,12 +2,19 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-metadata = true
-metadata_hash = "none"  # disable ipfs
+bytecode_hash = "none"
 use_literal_content = true # use source code
+
+# Base testnet
+eth-rpc-url = "https://sepolia.base.org"
+chain_id = 84532
 
 # Monad Configuration
 eth-rpc-url="https://testnet-rpc.monad.xyz"
 chain_id = 10143
+
+[profile.local]
+eth-rpc-url="http://127.0.0.1:8545"
+chain_id = 31337
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

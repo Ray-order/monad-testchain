@@ -1,0 +1,446 @@
+[dotenv@17.2.3] injecting env (1) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+{
+  "timestamp": "2025-12-22T10:54:52.229Z",
+  "event_type": "MONITOR_START",
+  "message": "Ultra-Detailed Reorg Monitor Active"
+}
+{
+  "timestamp": "2025-12-22T10:54:52.407Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 0,
+  "hash": "0x1d3f357133bf4baface43dbd8bb5f3d06aeb5532cf0a3c9ff160c2d8ef115925",
+  "parent_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "state_root": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+  "base_fee": "1000000000",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:54:57.065Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 1,
+  "hash": "0x2c57d5f8ec52f6e0b49bad857c0d8b45143d3fd6b78b931a76e4fa5456708ece",
+  "parent_hash": "0x1d3f357133bf4baface43dbd8bb5f3d06aeb5532cf0a3c9ff160c2d8ef115925",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "1000000000",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:54:57.066Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 2,
+  "hash": "0x88fce8406285ecf5315afe6e127b8a5c3c6dc93be4575c0a2193ab5193e7fb1c",
+  "parent_hash": "0x2c57d5f8ec52f6e0b49bad857c0d8b45143d3fd6b78b931a76e4fa5456708ece",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "875000000",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:54:57.066Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 3,
+  "hash": "0x6adfe2b8275ad7639683671d611a59c1651c5ef0a18cf1e41b4b436b50bdac17",
+  "parent_hash": "0x88fce8406285ecf5315afe6e127b8a5c3c6dc93be4575c0a2193ab5193e7fb1c",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "765625000",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:54:57.066Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 4,
+  "hash": "0x2baeae377efd090353869d64c54c4cd7523d4e7bf68998895ac4eb1835bbaf29",
+  "parent_hash": "0x6adfe2b8275ad7639683671d611a59c1651c5ef0a18cf1e41b4b436b50bdac17",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "669921875",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:54:57.066Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 5,
+  "hash": "0x6f4df5f68828afc186bd81d67edb3837f216708ace7dedbeb4854dc19b34965e",
+  "parent_hash": "0x2baeae377efd090353869d64c54c4cd7523d4e7bf68998895ac4eb1835bbaf29",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "586181641",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:54:59.028Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 6,
+  "hash": "0x9ef37a01197f3def9757d4dcb5da5e23a77156f0de7fcb62e807b1a1f6298373",
+  "parent_hash": "0x6f4df5f68828afc186bd81d67edb3837f216708ace7dedbeb4854dc19b34965e",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "512908936",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:54:59.028Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 7,
+  "hash": "0x1461e23f2d1fa2f4473e26e157a322d69e23d5f3c0b21598b16735467e0a5964",
+  "parent_hash": "0x9ef37a01197f3def9757d4dcb5da5e23a77156f0de7fcb62e807b1a1f6298373",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "448795319",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:54:59.029Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 8,
+  "hash": "0xa65fd73d1d7506a36ca32b516064d99ea075030de0fe862b006720af427f7fb0",
+  "parent_hash": "0x1461e23f2d1fa2f4473e26e157a322d69e23d5f3c0b21598b16735467e0a5964",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "392695905",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:01.141Z",
+  "event_type": "CHAIN_REWIND",
+  "from_height": 8,
+  "to_height": 5,
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:03.257Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 6,
+  "old_hash": "0x9ef37a01197f3def9757d4dcb5da5e23a77156f0de7fcb62e807b1a1f6298373",
+  "new_hash": "0xe2521b52fb8e89e91e14cf22727d11d7ebcdf40b4f24157fe00991ffbb352393",
+  "old_state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "new_state_root": "0x0e9025d460f14172e40aba4194d7609a6301fff59908d57e7e76b7b8592d67b4",
+  "tx_diff": {
+    "dropped": [],
+    "added": [
+      "0xce2ab0ea6b3bb7b245fc294435e3affa203ebf7dc6b7ec9375ae838a5d1d81ef"
+    ]
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:03.258Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 6,
+  "hash": "0xe2521b52fb8e89e91e14cf22727d11d7ebcdf40b4f24157fe00991ffbb352393",
+  "parent_hash": "0x6f4df5f68828afc186bd81d67edb3837f216708ace7dedbeb4854dc19b34965e",
+  "state_root": "0x0e9025d460f14172e40aba4194d7609a6301fff59908d57e7e76b7b8592d67b4",
+  "base_fee": "343608917",
+  "gas_used": "21000",
+  "tx_count": 1,
+  "transactions": [
+    "0xce2ab0ea6b3bb7b245fc294435e3affa203ebf7dc6b7ec9375ae838a5d1d81ef"
+  ]
+}
+{
+  "timestamp": "2025-12-22T10:55:03.258Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 7,
+  "old_hash": "0x1461e23f2d1fa2f4473e26e157a322d69e23d5f3c0b21598b16735467e0a5964",
+  "new_hash": "0x8483204ed7e7ae49d5d8245fef5aba8c27b35397be46e2ff12bcdbc002b5ab6e",
+  "old_state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "new_state_root": "0x0e9025d460f14172e40aba4194d7609a6301fff59908d57e7e76b7b8592d67b4",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:03.258Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 7,
+  "hash": "0x8483204ed7e7ae49d5d8245fef5aba8c27b35397be46e2ff12bcdbc002b5ab6e",
+  "parent_hash": "0xe2521b52fb8e89e91e14cf22727d11d7ebcdf40b4f24157fe00991ffbb352393",
+  "state_root": "0x0e9025d460f14172e40aba4194d7609a6301fff59908d57e7e76b7b8592d67b4",
+  "base_fee": "300717934",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:05.221Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 6,
+  "old_hash": "0xe2521b52fb8e89e91e14cf22727d11d7ebcdf40b4f24157fe00991ffbb352393",
+  "new_hash": "0x10210778c668b130376a68c3b07e36785cff4883740dc00155c287342a2eed31",
+  "old_state_root": "0x0e9025d460f14172e40aba4194d7609a6301fff59908d57e7e76b7b8592d67b4",
+  "new_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "tx_diff": {
+    "dropped": [
+      "0xce2ab0ea6b3bb7b245fc294435e3affa203ebf7dc6b7ec9375ae838a5d1d81ef"
+    ],
+    "added": [
+      "0x77309539d4977f45a30be3601266f1b3cfe0222805a6f73aa53dad6089a3ad52"
+    ]
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:05.221Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 6,
+  "hash": "0x10210778c668b130376a68c3b07e36785cff4883740dc00155c287342a2eed31",
+  "parent_hash": "0x6f4df5f68828afc186bd81d67edb3837f216708ace7dedbeb4854dc19b34965e",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "263128193",
+  "gas_used": "21000",
+  "tx_count": 1,
+  "transactions": [
+    "0x77309539d4977f45a30be3601266f1b3cfe0222805a6f73aa53dad6089a3ad52"
+  ]
+}
+{
+  "timestamp": "2025-12-22T10:55:05.222Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 7,
+  "old_hash": "0x8483204ed7e7ae49d5d8245fef5aba8c27b35397be46e2ff12bcdbc002b5ab6e",
+  "new_hash": "0xc4d4b91676b5dc3153ab060c0576ebee58d7d772a2e23df74d2fc83785a0a79b",
+  "old_state_root": "0x0e9025d460f14172e40aba4194d7609a6301fff59908d57e7e76b7b8592d67b4",
+  "new_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:05.222Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 7,
+  "hash": "0xc4d4b91676b5dc3153ab060c0576ebee58d7d772a2e23df74d2fc83785a0a79b",
+  "parent_hash": "0x10210778c668b130376a68c3b07e36785cff4883740dc00155c287342a2eed31",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "230283217",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:07.336Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 8,
+  "old_hash": "0xa65fd73d1d7506a36ca32b516064d99ea075030de0fe862b006720af427f7fb0",
+  "new_hash": "0x90c311df1de47883df0593e7dc460760d7dbf61caf7020a3b56f7762a6758fd7",
+  "old_state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "new_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:07.337Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 8,
+  "hash": "0x90c311df1de47883df0593e7dc460760d7dbf61caf7020a3b56f7762a6758fd7",
+  "parent_hash": "0xc4d4b91676b5dc3153ab060c0576ebee58d7d772a2e23df74d2fc83785a0a79b",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "201497815",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:07.337Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 9,
+  "hash": "0x628bfe8ecdaf4f99449aa2aa3c0d32d8f70c6885c4a3b859e70010fbb70e1cf4",
+  "parent_hash": "0x90c311df1de47883df0593e7dc460760d7dbf61caf7020a3b56f7762a6758fd7",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "176310589",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:07.338Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 10,
+  "hash": "0x05cbc29a24da58d733b103c055f62b0b579199fe7bf1edaa1c2e98d212178bfc",
+  "parent_hash": "0x628bfe8ecdaf4f99449aa2aa3c0d32d8f70c6885c4a3b859e70010fbb70e1cf4",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "154271766",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:07.338Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 11,
+  "hash": "0xe7cc31415f9144642c7631142c1c4ca7b6723c57700af670939d7fcd1ac3f2c0",
+  "parent_hash": "0x05cbc29a24da58d733b103c055f62b0b579199fe7bf1edaa1c2e98d212178bfc",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "134987796",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:07.338Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 12,
+  "hash": "0xe57abcac9f0f767b4efd2606628818028be23a997d19025f5a0531808eda3df5",
+  "parent_hash": "0xe7cc31415f9144642c7631142c1c4ca7b6723c57700af670939d7fcd1ac3f2c0",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "118114322",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:09.299Z",
+  "event_type": "CHAIN_REWIND",
+  "from_height": 12,
+  "to_height": 7,
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:09.449Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 8,
+  "old_hash": "0x90c311df1de47883df0593e7dc460760d7dbf61caf7020a3b56f7762a6758fd7",
+  "new_hash": "0xc8f5a2fcb063dcebb040fe1569764522780dbd813994b1a89eeb393fcc0c2cf6",
+  "old_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "new_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:09.449Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 8,
+  "hash": "0xc8f5a2fcb063dcebb040fe1569764522780dbd813994b1a89eeb393fcc0c2cf6",
+  "parent_hash": "0xc4d4b91676b5dc3153ab060c0576ebee58d7d772a2e23df74d2fc83785a0a79b",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "103350032",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:09.450Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 9,
+  "old_hash": "0x628bfe8ecdaf4f99449aa2aa3c0d32d8f70c6885c4a3b859e70010fbb70e1cf4",
+  "new_hash": "0x56532064c83bf571f0585067d739179985b3dbdc2ccda377013eb7fc424127e2",
+  "old_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "new_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:09.450Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 9,
+  "hash": "0x56532064c83bf571f0585067d739179985b3dbdc2ccda377013eb7fc424127e2",
+  "parent_hash": "0xc8f5a2fcb063dcebb040fe1569764522780dbd813994b1a89eeb393fcc0c2cf6",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "90431278",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:09.451Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 10,
+  "old_hash": "0x05cbc29a24da58d733b103c055f62b0b579199fe7bf1edaa1c2e98d212178bfc",
+  "new_hash": "0x3094c5b0d12eae401d7c06e0ecfed08c5d664f713ccb45d40d5160e30dd50fb9",
+  "old_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "new_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:09.451Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 10,
+  "hash": "0x3094c5b0d12eae401d7c06e0ecfed08c5d664f713ccb45d40d5160e30dd50fb9",
+  "parent_hash": "0x56532064c83bf571f0585067d739179985b3dbdc2ccda377013eb7fc424127e2",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "79127369",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:09.451Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 11,
+  "old_hash": "0xe7cc31415f9144642c7631142c1c4ca7b6723c57700af670939d7fcd1ac3f2c0",
+  "new_hash": "0xed4c499142ecaedf236d3f2721c55c3463fcfc6a75a564f85612c33b558e6e21",
+  "old_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "new_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:09.451Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 11,
+  "hash": "0xed4c499142ecaedf236d3f2721c55c3463fcfc6a75a564f85612c33b558e6e21",
+  "parent_hash": "0x3094c5b0d12eae401d7c06e0ecfed08c5d664f713ccb45d40d5160e30dd50fb9",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "69236448",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:55:09.452Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 12,
+  "old_hash": "0xe57abcac9f0f767b4efd2606628818028be23a997d19025f5a0531808eda3df5",
+  "new_hash": "0xeb2872efa560551e97eb0dae113ff6ce2622f2a637cc0414b96c1abb3a7243cd",
+  "old_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "new_state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:55:09.452Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 12,
+  "hash": "0xeb2872efa560551e97eb0dae113ff6ce2622f2a637cc0414b96c1abb3a7243cd",
+  "parent_hash": "0xed4c499142ecaedf236d3f2721c55c3463fcfc6a75a564f85612c33b558e6e21",
+  "state_root": "0xd3fa39704196d375c0f79bd0510fc51883b280a9dfcd2cac5e72d8c5ad923c33",
+  "base_fee": "60581892",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
