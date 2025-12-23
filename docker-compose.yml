@@ -6,9 +6,13 @@ services:
     container_name: monad-monitor
     restart: unless-stopped
     environment:
-      - RPC_URL=${RPC_URL:-https://testnet-rpc.monad.xyz}
+      - RPC_URL=${RPC_URL:-https://rpc.monad.xyz}
       - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-150}
       - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run monitor:monad
 
   base-monitor:
     # Use the image built locally
@@ -18,23 +22,118 @@ services:
     restart: unless-stopped
     environment:
       # Default to Base mainnet RPC if not provided
-      - RPC_URL=${BASE_RPC_URL:-https://sepolia.base.org}
-      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-150}
+      - RPC_URL=${BASE_RPC_URL:-https://mainnet.base.org}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-3000}
       - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
-    command: npm run monitor:base
-
-  # Development service: Hot-reloading enabled
-  # Run with: docker-compose up monad-monitor-dev
-  monad-monitor-dev:
-    image: monad-monitor
-    container_name: monad-monitor-dev
-    environment:
-      - RPC_URL=${RPC_URL:-https://testnet-rpc.monad.xyz}
-      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-150}
-      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
-    # Mount current directory to /app so changes are reflected immediately
     volumes:
       - .:/app
       - /app/node_modules
-    # Use Node's experimental watch mode (available in Node 18+)
-    command: node --watch src/monitor_reorg_monad.js
+    command: npm run monitor:base
+
+  arb-monitor:
+    image: monad-monitor
+    container_name: arb-monitor
+    restart: unless-stopped
+    environment:
+      - RPC_URL=${ARB_RPC_URL:-https://arb1.arbitrum.io/rpc}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-3000}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run monitor:arb
+
+  optimism-monitor:
+    image: monad-monitor
+    container_name: optimism-monitor
+    restart: unless-stopped
+    environment:
+      - RPC_URL=${OP_RPC_URL:-https://optimism.llamarpc.com}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-3000}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run monitor:optimism
+
+  bsc-monitor:
+    image: monad-monitor
+    container_name: bsc-monitor
+    restart: unless-stopped
+    environment:
+      - RPC_URL=${BSC_RPC_URL:-https://binance.llamarpc.com}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-3000}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run monitor:bsc
+
+  polygon-monitor:
+    image: monad-monitor
+    container_name: polygon-monitor
+    restart: unless-stopped
+    environment:
+      - RPC_URL=${POLYGON_RPC_URL:-https://polygon-rpc.com}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-3000}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run monitor:polygon
+
+  avalanche-monitor:
+    image: monad-monitor
+    container_name: avalanche-monitor
+    restart: unless-stopped
+    environment:
+      - RPC_URL=${AVAX_RPC_URL:-https://api.avax.network/ext/bc/C/rpc}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-3000}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run monitor:avalanche
+
+  sei-monitor:
+    image: monad-monitor
+    container_name: sei-monitor
+    restart: unless-stopped
+    environment:
+      - RPC_URL=${SEI_RPC_URL:-https://evm-rpc.sei-apis.com}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-3000}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run monitor:sei
+
+  # # Development service: Hot-reloading enabled
+  # # Run with: docker-compose up monad-monitor-dev
+  # monad-monitor-dev:
+  #   image: monad-monitor
+  #   container_name: monad-monitor-dev
+  #   environment:
+  #     - RPC_URL=${RPC_URL:-https://rpc.monad.xyz}
+  #     - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-150}
+  #     - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+  #   # Mount current directory to /app so changes are reflected immediately
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules
+  #   # Use Node's experimental watch mode (available in Node 18+)
+  #   command: node --watch src/monitor_reorg_monad.js
+
+  # monad-monitor-alert:
+  #   image: monad-monitor
+  #   container_name: monad-monitor-alert
+  #   environment:
+  #     - RPC_URL=${RPC_URL:-https://rpc.monad.xyz}
+  #     - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-150}
+  #     - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+  #   # Mount current directory to /app so changes are reflected immediately
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules
+  #   # Use Node's experimental watch mode (available in Node 18+)
+  #   command: node --watch src/monitor_reorg_monad_alert.js

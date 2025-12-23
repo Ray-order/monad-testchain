@@ -56,6 +56,20 @@ You can configure the monitors using environment variables in `docker-compose.ym
 
 ---
 
+### Monitoring Events
+
+The monitor tracks the following chain reorganization events:
+
+| Event Type | Meaning | Trigger Condition |
+|------------|---------|-------------------|
+| `BLOCK_REPLACED` | Block hash changed at same height | Cached block exists but new block hash differs (Note: Deep reorgs/rewinds clear cache to avoid duplicate alerts here). |
+| `PARENT_HASH_MISMATCH_DETECTED` | Parent hash mismatch | Block's Parent Hash doesn't match the cached hash of the previous block (Height-1). Indicates a fork/reorg at the tip. |
+| `CHAIN_REWIND` | Chain tip rolled back (Deep Reorg) | Latest block height < Max observed height. Indicates the canonical chain has become shorter (rewound). |
+| `CHAIN_ID_CHANGED` | Chain ID changed | The network Chain ID returned by RPC differs from the previously recorded ID. |
+| `GENESIS_CHANGED` | Genesis block changed | The hash of block 0 changed. Indicates a network reset or hard fork. |
+
+---
+
 ### Manual Setup (Without Docker)
 
 If you prefer running locally with Node.js:
