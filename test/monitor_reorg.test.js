@@ -70,6 +70,7 @@ class FakeClient {
   }
 }
 
+// 先创建一部分的区块，用于测试
 function createLinearChain({ from, to, genesisHash = '0xgenesis' }) {
   const blocks = [];
   for (let h = from; h <= to; h++) {
@@ -83,6 +84,7 @@ function createLinearChain({ from, to, genesisHash = '0xgenesis' }) {
   return blocks;
 }
 
+// 测试当最新高度下降时是否检测到 CHAIN_REWIND
 test('detects CHAIN_REWIND when latest height decreases', async () => {
   const client = new FakeClient();
   const events = [];
@@ -110,6 +112,7 @@ test('detects CHAIN_REWIND when latest height decreases', async () => {
   assert.equal(rewind.data.to_height, 3);
 });
 
+// 测试当区块高度相同时，哈希的变化是否检测到 BLOCK_REPLACED 事件
 test('detects BLOCK_REPLACED with tx diff when same height hash changes', async () => {
   const client = new FakeClient();
   const events = [];
@@ -146,6 +149,7 @@ test('detects BLOCK_REPLACED with tx diff when same height hash changes', async 
   assert.deepEqual(replaced.data.tx_diff.added.sort(), ['0xtx2c'].sort());
 });
 
+// 测试当区块高度相同时，parent哈希的变化是否检测到 REORG_DETECTED 事件
 test('detects REORG_DETECTED when parent hash becomes discontinuous', async () => {
   const client = new FakeClient();
   const events = [];
@@ -179,6 +183,7 @@ test('detects REORG_DETECTED when parent hash becomes discontinuous', async () =
   assert.equal(reorg.data.actual_parent, '0xsome_other_parent');
 });
 
+// 测试当区块高度相同时，parent哈希的变化是否检测到 REORG_DETECTED 事件，且在recheck窗口内
 test('detects non-tip reorg via recheck window', async () => {
   const client = new FakeClient();
   const events = [];
@@ -211,6 +216,7 @@ test('detects non-tip reorg via recheck window', async () => {
   assert.ok(replaced, 'expected BLOCK_REPLACED for height 8');
 });
 
+// 测试当区块高度相同时，parent哈希的变化是否检测到 REORG_DETECTED 事件，且在recheck窗口外
 test('trims cache to CACHE_DEPTH', async () => {
   const client = new FakeClient();
   const events = [];
@@ -233,6 +239,7 @@ test('trims cache to CACHE_DEPTH', async () => {
   assert.deepEqual(heights, [8, 9, 10]);
 });
 
+// 测试当chainId或genesisHash变化时，是否检测到 CHAIN_ID_CHANGED 和 GENESIS_CHANGED 事件
 test('detects chain reset signals via chainId/genesis changes', async () => {
   const client = new FakeClient();
   const events = [];
@@ -260,6 +267,7 @@ test('detects chain reset signals via chainId/genesis changes', async () => {
   assert.ok(events.some((e) => e.type === 'GENESIS_CHANGED'), 'expected GENESIS_CHANGED');
 });
 
+// 测试当RPC返回"Block not found"错误时，是否抑制该事件，其他错误是否记录
 test('suppresses RPC_ERROR for "Block not found", logs otherwise', async () => {
   const client = new FakeClient();
   const events = [];

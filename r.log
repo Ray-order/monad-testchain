@@ -1,0 +1,392 @@
+{
+  "timestamp": "2025-12-22T10:25:57.326Z",
+  "event_type": "MONITOR_START",
+  "message": "Ultra-Detailed Reorg Monitor Active"
+}
+{
+  "timestamp": "2025-12-22T10:25:57.555Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 0,
+  "hash": "0xdd4bd295607bfcf7ff3235ce0305aabaa70a4069a2bbca6cc5b0a15276710dba",
+  "parent_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "state_root": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+  "base_fee": "1000000000",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:27:09.900Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 1,
+  "hash": "0x13ef45bd87b245b7e183e23ddfb6c314b4b912d10deaedb58288571bfdaddbca",
+  "parent_hash": "0xdd4bd295607bfcf7ff3235ce0305aabaa70a4069a2bbca6cc5b0a15276710dba",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "1000000000",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:27:09.900Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 2,
+  "hash": "0x214a3762a97bc072e98b6ca2e4b8042e095a4786866fdb15635827e52fa2e3db",
+  "parent_hash": "0x13ef45bd87b245b7e183e23ddfb6c314b4b912d10deaedb58288571bfdaddbca",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "875000000",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:27:09.900Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 3,
+  "hash": "0x42b35ae9aedea4fa5b173d51888e148ff3bffeb74791335322c78b79dd0cc0dd",
+  "parent_hash": "0x214a3762a97bc072e98b6ca2e4b8042e095a4786866fdb15635827e52fa2e3db",
+  "state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "base_fee": "765625000",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:28:15.626Z",
+  "event_type": "CHAIN_REWIND",
+  "from_height": 3,
+  "to_height": 0,
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:30:35.364Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 1,
+  "old_hash": "0x13ef45bd87b245b7e183e23ddfb6c314b4b912d10deaedb58288571bfdaddbca",
+  "new_hash": "0xdf9066553a7eaa2d6161680f744d0528054c91dac0823be766f1563b31cfddb1",
+  "old_state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "new_state_root": "0xe2a2ba5a4ff512ebe7e737677703f2e96cda3829453baeb15830bfc86772e97a",
+  "tx_diff": {
+    "dropped": [],
+    "added": [
+      "0x16d21043f5e037475b3d4ba48618af9eae38f5e91095eb93b4977e960c59e357"
+    ]
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:30:35.368Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 1,
+  "hash": "0xdf9066553a7eaa2d6161680f744d0528054c91dac0823be766f1563b31cfddb1",
+  "parent_hash": "0xdd4bd295607bfcf7ff3235ce0305aabaa70a4069a2bbca6cc5b0a15276710dba",
+  "state_root": "0xe2a2ba5a4ff512ebe7e737677703f2e96cda3829453baeb15830bfc86772e97a",
+  "base_fee": "669921875",
+  "gas_used": "21000",
+  "tx_count": 1,
+  "transactions": [
+    "0x16d21043f5e037475b3d4ba48618af9eae38f5e91095eb93b4977e960c59e357"
+  ]
+}
+{
+  "timestamp": "2025-12-22T10:31:50.545Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 2,
+  "old_hash": "0x214a3762a97bc072e98b6ca2e4b8042e095a4786866fdb15635827e52fa2e3db",
+  "new_hash": "0x006accc1ee4bce7cf128b00fdfd51390620b3936fe3dd7b41b4d7c24fc9cc6fe",
+  "old_state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "new_state_root": "0xe2a2ba5a4ff512ebe7e737677703f2e96cda3829453baeb15830bfc86772e97a",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:31:50.545Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 2,
+  "hash": "0x006accc1ee4bce7cf128b00fdfd51390620b3936fe3dd7b41b4d7c24fc9cc6fe",
+  "parent_hash": "0xdf9066553a7eaa2d6161680f744d0528054c91dac0823be766f1563b31cfddb1",
+  "state_root": "0xe2a2ba5a4ff512ebe7e737677703f2e96cda3829453baeb15830bfc86772e97a",
+  "base_fee": "586298877",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:32:15.671Z",
+  "event_type": "CHAIN_REWIND",
+  "from_height": 2,
+  "to_height": 0,
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:33:10.951Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 1,
+  "old_hash": "0xdf9066553a7eaa2d6161680f744d0528054c91dac0823be766f1563b31cfddb1",
+  "new_hash": "0x2e76d2310566c0a03b3c0b8f82db9603f4ebc039aba96c7888e5b9d6601bc5a9",
+  "old_state_root": "0xe2a2ba5a4ff512ebe7e737677703f2e96cda3829453baeb15830bfc86772e97a",
+  "new_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "tx_diff": {
+    "dropped": [
+      "0x16d21043f5e037475b3d4ba48618af9eae38f5e91095eb93b4977e960c59e357"
+    ],
+    "added": [
+      "0xea258c2327fc7bf3af92896b3f373b4f8ab32da346e60bbedec3427982952128"
+    ]
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:33:10.951Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 1,
+  "hash": "0x2e76d2310566c0a03b3c0b8f82db9603f4ebc039aba96c7888e5b9d6601bc5a9",
+  "parent_hash": "0xdd4bd295607bfcf7ff3235ce0305aabaa70a4069a2bbca6cc5b0a15276710dba",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "513011518",
+  "gas_used": "21000",
+  "tx_count": 1,
+  "transactions": [
+    "0xea258c2327fc7bf3af92896b3f373b4f8ab32da346e60bbedec3427982952128"
+  ]
+}
+{
+  "timestamp": "2025-12-22T10:33:16.578Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 2,
+  "old_hash": "0x006accc1ee4bce7cf128b00fdfd51390620b3936fe3dd7b41b4d7c24fc9cc6fe",
+  "new_hash": "0x4b727ca75968ee9a832ad5a9172a3f1bd22a2fddd1ba03c9ee74f2422e6ec118",
+  "old_state_root": "0xe2a2ba5a4ff512ebe7e737677703f2e96cda3829453baeb15830bfc86772e97a",
+  "new_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:33:16.578Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 2,
+  "hash": "0x4b727ca75968ee9a832ad5a9172a3f1bd22a2fddd1ba03c9ee74f2422e6ec118",
+  "parent_hash": "0x2e76d2310566c0a03b3c0b8f82db9603f4ebc039aba96c7888e5b9d6601bc5a9",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "448974856",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:00.208Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 3,
+  "old_hash": "0x42b35ae9aedea4fa5b173d51888e148ff3bffeb74791335322c78b79dd0cc0dd",
+  "new_hash": "0x1726deba97b96e2948660758e7cb80b1308865d47ac10afc9f040915796902a3",
+  "old_state_root": "0x9c8eaf493f8b4edce2ba1647343eadcc0989cf461e712c0a6253ff2ca1842bb7",
+  "new_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:34:00.208Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 3,
+  "hash": "0x1726deba97b96e2948660758e7cb80b1308865d47ac10afc9f040915796902a3",
+  "parent_hash": "0x4b727ca75968ee9a832ad5a9172a3f1bd22a2fddd1ba03c9ee74f2422e6ec118",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "392852999",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:00.209Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 4,
+  "hash": "0x860b9de4aa44d9272d5545495ce0ebea8b0bde2b5c42359a5f43fa18b0b248ed",
+  "parent_hash": "0x1726deba97b96e2948660758e7cb80b1308865d47ac10afc9f040915796902a3",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "343746375",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:00.209Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 5,
+  "hash": "0x895384e81b9f77697d06e813719faff95f720db4baf679516104b1f03871b9c1",
+  "parent_hash": "0x860b9de4aa44d9272d5545495ce0ebea8b0bde2b5c42359a5f43fa18b0b248ed",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "300778079",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:00.209Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 6,
+  "hash": "0x6c06cab397ceea1bf0e250c6aa24305d7f2b8b4e64b2c962d59e53289d9eb006",
+  "parent_hash": "0x895384e81b9f77697d06e813719faff95f720db4baf679516104b1f03871b9c1",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "263180820",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:00.209Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 7,
+  "hash": "0x67347ada497823486d0d375f6b319e74906caf6d88761adc67621e978a3e179f",
+  "parent_hash": "0x6c06cab397ceea1bf0e250c6aa24305d7f2b8b4e64b2c962d59e53289d9eb006",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "230283218",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:31.171Z",
+  "event_type": "CHAIN_REWIND",
+  "from_height": 7,
+  "to_height": 2,
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:34:52.280Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 3,
+  "old_hash": "0x1726deba97b96e2948660758e7cb80b1308865d47ac10afc9f040915796902a3",
+  "new_hash": "0xc4469fa3fd85e4ce77b55ae096f18564253d2facdcb22072efe435e7af1515bd",
+  "old_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "new_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:34:52.280Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 3,
+  "hash": "0xc4469fa3fd85e4ce77b55ae096f18564253d2facdcb22072efe435e7af1515bd",
+  "parent_hash": "0x4b727ca75968ee9a832ad5a9172a3f1bd22a2fddd1ba03c9ee74f2422e6ec118",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "201497816",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:52.280Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 4,
+  "old_hash": "0x860b9de4aa44d9272d5545495ce0ebea8b0bde2b5c42359a5f43fa18b0b248ed",
+  "new_hash": "0x1c4a7f4ffe5b803642e275259e549b1aecc4d742a4092149deb79aca96c85b4c",
+  "old_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "new_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:34:52.281Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 4,
+  "hash": "0x1c4a7f4ffe5b803642e275259e549b1aecc4d742a4092149deb79aca96c85b4c",
+  "parent_hash": "0xc4469fa3fd85e4ce77b55ae096f18564253d2facdcb22072efe435e7af1515bd",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "176310589",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:52.281Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 5,
+  "old_hash": "0x895384e81b9f77697d06e813719faff95f720db4baf679516104b1f03871b9c1",
+  "new_hash": "0x64de0771d265778959d5d834c067132073af1d246f074f47fa8504668cd83088",
+  "old_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "new_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:34:52.281Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 5,
+  "hash": "0x64de0771d265778959d5d834c067132073af1d246f074f47fa8504668cd83088",
+  "parent_hash": "0x1c4a7f4ffe5b803642e275259e549b1aecc4d742a4092149deb79aca96c85b4c",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "154271766",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:52.281Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 6,
+  "old_hash": "0x6c06cab397ceea1bf0e250c6aa24305d7f2b8b4e64b2c962d59e53289d9eb006",
+  "new_hash": "0xfb84d0d2e56567b56da17e795a0db3f1e48bfa936b3c8e28f04dc8d7b50e368f",
+  "old_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "new_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:34:52.281Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 6,
+  "hash": "0xfb84d0d2e56567b56da17e795a0db3f1e48bfa936b3c8e28f04dc8d7b50e368f",
+  "parent_hash": "0x64de0771d265778959d5d834c067132073af1d246f074f47fa8504668cd83088",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "134987796",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}
+{
+  "timestamp": "2025-12-22T10:34:52.282Z",
+  "event_type": "BLOCK_REPLACED",
+  "height": 7,
+  "old_hash": "0x67347ada497823486d0d375f6b319e74906caf6d88761adc67621e978a3e179f",
+  "new_hash": "0x1d71dcb9d9ca5c2bb1bfc8407a7a7a1fb804905d23961b837f6cb581eacbc0ac",
+  "old_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "new_state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "tx_diff": {
+    "dropped": [],
+    "added": []
+  },
+  "severity": "CRITICAL"
+}
+{
+  "timestamp": "2025-12-22T10:34:52.282Z",
+  "event_type": "BLOCK_RECEIVED",
+  "height": 7,
+  "hash": "0x1d71dcb9d9ca5c2bb1bfc8407a7a7a1fb804905d23961b837f6cb581eacbc0ac",
+  "parent_hash": "0xfb84d0d2e56567b56da17e795a0db3f1e48bfa936b3c8e28f04dc8d7b50e368f",
+  "state_root": "0x2fd3be0f253cbd431320480035cfe49b677ee0b66272accf468b20805265a3a7",
+  "base_fee": "118114322",
+  "gas_used": "0",
+  "tx_count": 0,
+  "transactions": []
+}

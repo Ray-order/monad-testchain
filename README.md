@@ -8,6 +8,75 @@
    <a href="https://github.com/monad-developers/foundry-monad/issues">Report Issue</a>
 </h4>
 
+### Quick Start with Docker (Recommended)
+
+We provide Docker support to get you up and running quickly without worrying about Node.js versions or dependencies.
+
+#### 1. Run in Production Mode
+To start the monitors in the background:
+
+```bash
+docker-compose up -d
+```
+
+This will start:
+- `monad-monitor`: Monitors Monad Testnet
+- `base-monitor`: Monitors Base Testnet
+
+View logs:
+```bash
+docker-compose logs -f
+# Or for a specific service
+docker-compose logs -f monad-monitor
+docker-compose logs -f base-monitor
+```
+
+#### 2. Run in Development Mode
+For local development with **hot-reloading**:
+
+```bash
+docker-compose up monad-monitor-dev
+```
+- This mounts your local directory into the container.
+- Changes to files in `src/` will automatically restart the application.
+- Ideal for testing changes without rebuilding images.
+
+---
+
+### Configuration
+
+You can configure the monitors using environment variables in `docker-compose.yml` or a `.env` file:
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `RPC_URL` | Monad RPC Endpoint | `https://testnet-rpc.monad.xyz` |
+| `BASE_RPC_URL` | Base RPC Endpoint | `https://sepolia.base.org` |
+| `POLL_INTERVAL_MS` | Polling interval in ms | `150` |
+| `ALERT_WEBHOOK_URL`| (Optional) Slack/Discord Webhook | `""` |
+
+---
+
+### Manual Setup (Without Docker)
+
+If you prefer running locally with Node.js:
+
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Run Monitors**
+   ```bash
+   # Monitor Monad
+   npm run monitor:monad
+
+   # Monitor Base
+   npm run monitor:base
+   ```
+
+---
+
+## Foundry Template Info (Original README)
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 

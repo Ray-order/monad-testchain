@@ -1,0 +1,40 @@
+services:
+  monad-monitor:
+    # Use the image built locally to avoid registry issues
+    image: monad-monitor
+    # build: .
+    container_name: monad-monitor
+    restart: unless-stopped
+    environment:
+      - RPC_URL=${RPC_URL:-https://testnet-rpc.monad.xyz}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-150}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+
+  base-monitor:
+    # Use the image built locally
+    image: monad-monitor
+    # build: .
+    container_name: base-monitor
+    restart: unless-stopped
+    environment:
+      # Default to Base mainnet RPC if not provided
+      - RPC_URL=${BASE_RPC_URL:-https://sepolia.base.org}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-150}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    command: npm run monitor:base
+
+  # Development service: Hot-reloading enabled
+  # Run with: docker-compose up monad-monitor-dev
+  monad-monitor-dev:
+    image: monad-monitor
+    container_name: monad-monitor-dev
+    environment:
+      - RPC_URL=${RPC_URL:-https://testnet-rpc.monad.xyz}
+      - POLL_INTERVAL_MS=${POLL_INTERVAL_MS:-150}
+      - ALERT_WEBHOOK_URL=${ALERT_WEBHOOK_URL}
+    # Mount current directory to /app so changes are reflected immediately
+    volumes:
+      - .:/app
+      - /app/node_modules
+    # Use Node's experimental watch mode (available in Node 18+)
+    command: node --watch src/monitor_reorg_monad.js
